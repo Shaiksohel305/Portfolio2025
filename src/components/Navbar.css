@@ -1,0 +1,104 @@
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    background: #0b0b0b;
+    /* bright black */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.05);
+}
+
+/* LOGO */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* MENU */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+/* HIRE BUTTON */
+.hire-btn {
+    padding: 8px 18px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hire-btn a {
+    color: #0b0b0b;
+    text-decoration: none;
+}
+
+.hire-btn:hover a {
+    color: #0b0b0b;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        flex-direction: column;
+        background: rgba(7, 7, 7, 0.55);
+        width: 220px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-links.mobile-menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hire-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

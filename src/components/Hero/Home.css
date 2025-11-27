@@ -1,0 +1,112 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: #0b0b0b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px 0;
+}
+
+.home-left {
+    max-width: 600px;
+}
+
+.intro {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 25px;
+    color: orange;
+    margin-bottom: 45px;
+    height: 40px;
+}
+
+/* Typing Animation */
+
+/* Description */
+.desc {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.home-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hire-btn {
+    padding: 5px 15px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hire-btn:hover {
+    background: #ffae00;
+}
+
+.cv-btn {
+    padding: 5px 15px;
+    background: transparent;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cv-btn:hover {
+    background: orange;
+    color: black;
+}
+
+/* Image Side */
+.home-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 290px;
+    height: 290px;
+    border: 4px solid orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 40px;
+
+    }
+
+    .home-right {
+        margin-top: 30px;
+    }
+}
